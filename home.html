@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.1.0-dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/b2c6d2915b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="sidebar">
+      <div class="white-sidebar">
+        <div class="logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <div class="controls">
+          <i id="close" class="fa fa-align-justify fa-times"></i>
+          <i id="open" class="fa fa-align-justify"></i>
+        </div>
+        <div class="logos">
+          <span>
+            <i class="fas fa-globe pb-2"></i>
+          </span>
+          <span>
+            <i class="fas fa-share-alt pb-2"></i>
+          </span>
+        </div>
+      </div>
+      <div class="black-sidebar">
+        <div class="links">
+          <ul>
+            <li>
+              <a href="#new_playing" id="now_playing" class="nav-link"
+                >Now Playing</a
+              >
+            </li>
+            <li>
+              <a href="#popluar" id="popular" class="nav-link">Popular</a>
+            </li>
+            <li>
+              <a href="#to_prated" id="top_rated" class="nav-link">Top Rated</a>
+            </li>
+            <li>
+              <a href="#Trending" id="trending" class="nav-link">Trending</a>
+            </li>
+            <li>
+              <a href="#upcoming" id="upcoming" class="nav-link">Up Coming</a>
+            </li>
+            <li><a href="#contact" class="nav-link">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="social-icons text-left">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fas fa-globe"></i></a>
+          <div class="">
+            <span>Copyright Â© 2019 All Rights Reserved.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="mainsection" class="pt-5 pb-5">
+      <div class="container">
+        <div class="serchinputs w-75 row m-auto">
+          <div class="col-lg-12">
+            <input
+              type="text"
+              class="form-control mb-5"
+              name=""
+              id="Serach-word"
+              placeholder="Search..."
+            />
+          </div>
+        </div>
+        <div id="main-result" class="film-data row m-auto"></div>
+      </div>
+    </section>
+    <section id="contact" class="pt-3 pb-5">
+      <div class="container">
+        <h2 class="text-light font-weight-light">Contac Us...</h2>
+        <div class="row m-auto">
+          <div class="col-md-6">
+            <div class="leftform">
+              <input
+                type="text"
+                class="form-control mb-5"
+                name=""
+                id="name"
+                placeholder="Enter Name"
+              />
+              <div class="alert alert-danger" id="namealert">
+                Name is not invaild
+              </div>
+              <input
+                type="text"
+                class="form-control mb-5"
+                name=""
+                id="phone"
+                placeholder="Enter Phone"
+              />
+              <div class="alert alert-danger" id="phonealert">
+                Phone is not invaild
+              </div>
+
+              <input
+                type="password"
+                class="form-control mb-5"
+                name=""
+                id="pass"
+                placeholder="Enter Password"
+              />
+              <div class="alert alert-danger" id="passalert">
+                Password is not invaild
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="rightform">
+              <input
+                type="text"
+                class="form-control mb-5"
+                name=""
+                id="email"
+                placeholder="Enter Email"
+              />
+              <div class="alert alert-danger" id="Emailalert">
+                Email is not invaild
+              </div>
+              <input
+                type="text"
+                class="form-control mb-5"
+                name=""
+                id="age"
+                placeholder="Enter Age"
+              />
+              <div class="alert alert-danger" id="agealert">
+                Age is not invaild
+              </div>
+
+              <input
+                type="password"
+                class="form-control mb-5"
+                name=""
+                id="repass"
+                placeholder="Enter RePassword"
+              />
+              <div class="alert alert-danger" id="repassalert">
+                Password is not same
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-outline-danger ms-2">Submit</button>
+      </div>
+    </section>
+    <script src="./bootstrap-5.1.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./jquery/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

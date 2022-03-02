@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #212529 !important;
+}
+.container {
+  width: 85% !important;
+}
+.white-sidebar {
+  position: fixed;
+  background-color: #f8f6f6;
+  z-index: 10000;
+  width: 50px;
+  height: 100vh;
+  left: 0px;
+  top: 0;
+}
+#close {
+  display: none;
+}
+#open {
+  display: inline;
+}
+.black-sidebar {
+  position: fixed;
+  background-color: #000;
+  z-index: 1000;
+  width: 0px;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+.white-sidebar .logo {
+  padding: 25px 10px;
+}
+.white-sidebar .logo img {
+  height: 50px;
+}
+.white-sidebar .controls {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.white-sidebar .controls i {
+  font-size: 25px;
+}
+.white-sidebar .logos {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.black-sidebar .links ul li {
+  list-style: none;
+  padding: 20px 0px;
+}
+.black-sidebar .links .nav-link {
+  text-decoration: none;
+  color: #f9f6f6;
+}
+.nav-link-contact {
+  display: block;
+  margin: auto;
+  text-decoration: none;
+  color: #f8f6f6;
+}
+.nav-link-contact:hover {
+  color: red;
+  transition: ease-in-out 0.3s;
+}
+.black-sidebar .links ul li .nav-link:hover {
+  color: red;
+  transition: ease-in-out 0.3s;
+}
+.black-sidebar .social-icons {
+  position: absolute;
+  bottom: 30px;
+  padding-left: 10px;
+}
+.black-sidebar .social-icons a {
+  padding: 10px;
+  color: #f9f6f6;
+}
+.form-control {
+  border: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7) !important;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  color: #fff !important;
+}
+input[type="text"]::placeholder {
+  text-align: center;
+}
+input[type="password"]::placeholder {
+  text-align: center;
+}
+.post {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.post-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  color: black;
+  font-weight: 700;
+  transform: translateY(100%);
+  opacity: 0;
+  border-radius: 0.25rem;
+}
+
+.contnet {
+  padding: 70px 10px 20px 20px;
+}
+.post:hover .post-content {
+  transform: translateY(0);
+  opacity: 1;
+  transition: ease-in-out 1s;
+}
+.alert {
+  top: -46px !important;
+  display: none;
+}
